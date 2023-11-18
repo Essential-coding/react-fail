@@ -1,0 +1,16 @@
+.sponsors {
+    .container {
+        display:grid;
+        grid-template-columns: auto ;
+        place-items: center;
+        
+        @media (min-width:768px) {
+           display:grid;
+           grid-template-columns: auto auto;
+        }
+
+        @media (min-width:1200px) {
+            display:flex;
+         }      
+    }
+}

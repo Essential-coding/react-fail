@@ -1,0 +1,46 @@
+.featureSection {
+    @media (min-width:992px) {
+        max-width: 1920px;
+    } 
+
+    border:1px solid yellow;
+
+    display:grid;
+    grid-template-columns: auto;
+
+    @media (min-width:992px) {
+        grid-template-columns: auto auto;
+    }
+
+
+    .title{
+        background-color:orange;
+    }
+    .button{
+        background-color: bisque;
+    }
+
+
+    .features{
+        background-color:yellow;
+
+        display:grid;
+        
+        @media (min-width:992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .box-1{
+            border:black 1px solid;
+        }
+    }
+    
+    
+}
+
+      
+    
+  
+  
+  
+  

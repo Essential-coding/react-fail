@@ -1,0 +1,30 @@
+//Pages
+@import "./scss_pages/Home";
+
+
+
+
+//Core scss Buttons
+
+@import "./scss_core/Buttons";
+
+//Core scss Sectiontitle
+
+@import "./scss_core/SectionTitle";
+
+
+
+//--------------------------
+
+//Components for Home
+@import "./scss_components/Header";
+
+
+// Components for ShowCase
+@import "./scss_components/Showcase";
+
+//Components for Sponsors
+@import "./scss_components/Sponsors";
+
+//Components for FeaturesSection
+@import "./scss_components/FeaturesSection";
