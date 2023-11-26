@@ -320,7 +320,6 @@ html, body {
   justify-content: center;
 }
 .featureSection .feature-content .features {
-  background-color: yellow;
   display: grid;
 }
 @media (min-width: 992px) {
@@ -336,6 +335,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-top: 155px;
   }
 }
 .featureSection .feature-content .features .box-1 .feature-content {

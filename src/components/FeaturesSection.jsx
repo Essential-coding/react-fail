@@ -8,6 +8,14 @@ import YellowButton from '../components_core/YellowButton'
 
 
 const FeaturesSection = () => {
+    
+    const featureData = [
+        {id:1, image:feature_1, title:"Business Advice", text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.", alt:"two hands shaking symbolizes agreement"},
+        {id:2, image:feature_2, title:"Startup Business", text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.", alt:"Man's head inside a glowing lamp symbolizes great advices and ideas"},
+        {id:3, image:feature_3, title:"Financial Advice", text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.", alt:"A diagram that symbolizes economic growth"},
+        {id:4, image:feature_4, title:"Risk Management", text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.", alt:"Box with cog outside that symbolizes management"},
+
+    ]; 
 
 
 
@@ -29,51 +37,24 @@ const FeaturesSection = () => {
                     </section>
                 </section>
                 <section className='features'>
-                    <section className='box-1'>
+                    {featureData.map ((feature) => (
+                    <section className='box-1' key={feature.id}>
                         <div className='feature-img feature-content'>
-                            <img src={feature_1} alt="" />
+                            <img src = {feature.image} alt = {feature.alt} ></img>
                         </div>
                         <div className='feature-title feature-content'>
-                            <h3>Business Advice</h3>
+                            <h3>{feature.title}</h3>
                         </div>
                         <div className='feature-text feature-content'>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>{feature.text}</p>
                         </div>
                     </section>
-                    <section className='box-1'>
-                        <div className='feature-img feature-content'>
-                            <img src={feature_2} alt="" />
-                        </div>
-                        <div className='feature-title feature-content'>
-                            <h3>Startup Business</h3>
-                        </div>
-                        <div className='feature-text feature-content'>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </section>
-                    <section className='box-1'>
-                        <div className='feature-img feature-content'>
-                            <img src={feature_3} alt="" />
-                        </div>
-                        <div className='feature-title feature-content'>
-                            <h3>Financial Advice</h3>
-                        </div>
-                        <div className='feature-text feature-content'>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </section>
-                    <section className='box-1'>
-                        <div className='feature-img feature-content'>
-                            <img src={feature_4} alt="" />
-                        </div>
-                        <div className='feature-title feature-content'>
-                            <h3>Risk Management</h3>
-                        </div>
-                        <div className='feature-text feature-content'>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </section>
-                </section>
+                    
+
+                    ))};
+                   </section>
+                  
+                
             </div>
         </section>
     )
