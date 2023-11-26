@@ -1,0 +1,147 @@
+
+.services {
+
+    .services-lines {
+        display: none;
+    }
+
+    @media(min-width:1920px) {
+        position: relative;
+
+        .services-lines {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    padding: 100px 0px;
+    background-color: #F0EFE9;
+
+    .title-container {
+
+        display: grid;
+        grid-template: auto;
+        text-align: center;
+
+
+        @media(min-width:768px) {
+            grid-template-columns: 70%;
+            text-align: left;
+        }
+
+        @media(min-width:992px) {
+            grid-template-columns: 55%;
+            text-align: left;
+        }
+
+        @media(min-width:1200px) {
+            grid-template-columns: 45%;
+            text-align: left;
+        }
+
+
+
+    }
+
+    // title-container
+
+    .card-container {
+        display: grid;
+        grid-template: auto;
+        gap: 40px;
+
+       
+
+
+        @media(min-width:768px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+
+        }
+
+        @media(min-width:992px) {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+
+    
+
+        .business-cards {
+            padding: 25px;
+
+
+            &:hover {
+                background-color:#F9D783;
+            }
+            
+          
+            @media(min-width:992px) {
+                padding: 8px;
+            }
+
+            @media(min-width:1200px) {
+                padding: 25px;
+            }
+
+            .customized-border {
+                border: 1px solid black;
+                width: 15%;
+                margin-bottom: 15px;
+            }
+
+            //Footer for the cards
+            footer {
+
+
+                display: flex;
+                justify-content: end;
+
+
+
+
+                i {
+                    color: #ffffff;
+                    background-color: #000000;
+                    border-radius: 50%;
+                    padding: 10px;
+
+
+                }
+
+
+            }
+        }
+
+        .white-cards {
+            background-color: #ffffffff;
+
+          
+        }
+
+
+        .colored-card {
+            background-color: #F9D783;
+
+            i {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+
+    }
+
+    //Another Footer for browse service button
+    footer {
+
+        display:flex;
+        justify-content: center;
+        padding-top:50px;
+    }
+
+
+}
+
