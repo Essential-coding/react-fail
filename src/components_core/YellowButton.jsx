@@ -1,9 +1,9 @@
 import React from 'react'
 
-const YellowButton = ({text, url, type}) => {
+const YellowButton = ({text, url,}) => {
   return (
 
-    <a className={type} href={url}>
+    <a className="btn-yellow btn-login" href={url}>
       {text} 
     <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
   )

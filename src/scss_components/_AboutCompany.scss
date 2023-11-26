@@ -6,10 +6,10 @@
         @media(min-width:768px) {
             grid-template-columns: 45% auto;
             column-gap: 5%;
-            grid-template-areas: "aside header";
+            grid-template-areas: "aside section";
 
-            header {
-                grid-area: header;
+            section {
+                grid-area: section;
             }
 
             aside {
@@ -30,7 +30,7 @@
 
 
 
-        header {
+        section {
             background-color: #ffff;
             padding: 0;
             display: grid;
@@ -47,67 +47,7 @@
                 text-align: left;
             }
 
-            @media (min-width:1200px) {
-                button {
-                    display: flex;
-                    align-items: center;
-                    border: none;
-                    background-color: transparent;
-
-
-
-                    .btn-video {
-                        padding: 0;
-                        margin-top: 0;
-                        border: none;
-                        margin-left: 15px;
-
-
-                    }
-
-                    .btn-video:hover {
-                        margin-top: 0;
-                        padding: 5px 10px;
-                    }
-
-
-                }
-            }
-
-
-
-
-            .btn-video {
-                color: #191919;
-                text-decoration: none;
-                padding: 6px 12px; //mobile
-                transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
-                border: 1px solid #DAD9D3;
-                border-radius: 25px;
-                margin-top: 15px;
-
-
-
-
-
-
-
-                i {
-                    padding-right: 15px;
-                    font-size: 2em;
-
-                }
-            }
-
-            .btn-video:hover {
-                transform: scale(1.1);
-                border-radius: 25px;
-                background-color: #000000;
-                color: #ffffff;
-
-
-            }
-
+         
 
 
 
@@ -131,7 +71,8 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 40%
+                    width: 40%;
+                    z-index: 1; 
                 }
 
                 img {
@@ -152,7 +93,7 @@
                     width: 90%;
                     padding: 12px;
                     position: absolute;
-                    bottom: -2%;
+                    bottom: 7%;
                     left: -15%;
                 }
 

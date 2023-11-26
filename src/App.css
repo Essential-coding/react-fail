@@ -69,6 +69,80 @@ html, body {
   }
 }
 
+@media (min-width: 1200px) {
+  button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+  button .btn-video {
+    padding: 0;
+    margin-top: 0;
+    border: none;
+    margin-left: 15px;
+  }
+  button .btn-video:hover {
+    margin-top: 0;
+    padding: 5px 10px;
+  }
+}
+.btn-video {
+  color: #191919;
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+  border: 1px solid #DAD9D3;
+  border-radius: 25px;
+  margin-top: 15px;
+  display: flex;
+}
+.btn-video i {
+  padding-right: 15px;
+  font-size: 2em;
+}
+
+.btn-video:hover {
+  transform: scale(1.1);
+  border-radius: 25px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
+  animation: opacity-animation 1s ease-in-out;
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section-title {
   padding-top: 120px;
   padding-bottom: 90px;
@@ -356,10 +430,10 @@ html, body {
     grid-template-columns: 45% auto;
     -moz-column-gap: 5%;
          column-gap: 5%;
-    grid-template-areas: "aside header";
+    grid-template-areas: "aside section";
   }
-  .about-company .container header {
-    grid-area: header;
+  .about-company .container section {
+    grid-area: section;
   }
   .about-company .container aside {
     grid-area: aside;
@@ -371,61 +445,24 @@ html, body {
          column-gap: 15%;
   }
 }
-.about-company .container header {
+.about-company .container section {
   background-color: white;
   padding: 0;
   display: grid;
   grid-template-columns: auto;
   text-align: center;
 }
-.about-company .container header button {
+.about-company .container section button {
   background-color: transparent;
   border: none;
   cursor: auto;
 }
 @media (min-width: 992px) {
-  .about-company .container header {
+  .about-company .container section {
     text-align: left;
   }
 }
-@media (min-width: 1200px) {
-  .about-company .container header button {
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-  }
-  .about-company .container header button .btn-video {
-    padding: 0;
-    margin-top: 0;
-    border: none;
-    margin-left: 15px;
-  }
-  .about-company .container header button .btn-video:hover {
-    margin-top: 0;
-    padding: 5px 10px;
-  }
-}
-.about-company .container header .btn-video {
-  color: #191919;
-  text-decoration: none;
-  padding: 6px 12px;
-  transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
-  border: 1px solid #DAD9D3;
-  border-radius: 25px;
-  margin-top: 15px;
-}
-.about-company .container header .btn-video i {
-  padding-right: 15px;
-  font-size: 2em;
-}
-.about-company .container header .btn-video:hover {
-  transform: scale(1.1);
-  border-radius: 25px;
-  background-color: #000000;
-  color: #ffffff;
-}
-.about-company .container header .section-title {
+.about-company .container section .section-title {
   padding: 0;
 }
 .about-company .container aside .about-image {
@@ -436,6 +473,7 @@ html, body {
   top: 0;
   left: 0;
   width: 40%;
+  z-index: 1;
 }
 .about-company .container aside .about-image img {
   width: 100%;
@@ -454,6 +492,6 @@ html, body {
   width: 90%;
   padding: 12px;
   position: absolute;
-  bottom: -2%;
+  bottom: 7%;
   left: -15%;
 }

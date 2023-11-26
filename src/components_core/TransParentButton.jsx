@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TransparentButton = ({text, url}) => {
+const TransparentButton = ({text, url, type}) => {
   return (
     <a className="btn-transparent btn-login" href={url}>{text}<i
         className="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -8,3 +8,5 @@ const TransparentButton = ({text, url}) => {
 }
 
 export default TransparentButton
+
+

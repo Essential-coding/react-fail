@@ -1,4 +1,10 @@
 import React from 'react'
+import SectionTitle from '../components_core/SectionTitle'
+import aboutImage from "../assets/AboutImages/woman.jpg"
+import aboutQuote from "../assets/AboutImages/about-quotes.png"
+import { VideoButton } from '../components_core/VideoButton'
+import BlackButton from '../components_core/BlackButton'
+import whiteLines_img from "../assets/AboutImages/whiteLines.svg"
 
 const AboutCompany = () => {
   return (
@@ -6,11 +12,13 @@ const AboutCompany = () => {
 
     <div className="container">
 
-        <header>
-            <div className="about-title section-title">
-                <p>About Company</p>
-                <h2>We Are Business Consulting & Credit Repair Experts</h2>
-            </div>
+    <section>
+
+        <SectionTitle 
+        introText= "About Company"
+        title="We Are Business Consulting & Credit Repair Experts">
+        </SectionTitle>
+    
             <div className="about-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda
                     esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>
@@ -19,22 +27,25 @@ const AboutCompany = () => {
             </div>
 
             <button>
-                <a className="btn-black center-content" href="#">Learn More <i
-                        className="fa-solid fa-arrow-up-right-from-square"></i></a>
+              
+                <BlackButton
+                    text="Learn More" url="/">
+                </BlackButton>
 
-                <a className="btn-video center-content" href="#"><i className="fa-regular fa-circle-play"></i>Intro
-                    Video</a>
+                <VideoButton
+                    text = "Intro Video" url="/">
+                </VideoButton>
             </button>
-        </header>
+            </section>
 
         <aside>
 
             <div className="about-image">
-                <img src="images/about-company-lines.svg" className="about-lines-img" alt=""/>
-                <img src="images/about-company.png"
+                <img src={whiteLines_img} className="about-lines-img" alt=""/>
+                <img src={aboutImage}
                     alt="Woman walking inside office while holding a tablet"/>
                 <div className="about-quote">
-                    <img src="images/about-company-quotes.png"
+                    <img src={aboutQuote}
                         alt="A quote that says Samantha Brown,Founder"/>
                 </div>
             </div>
