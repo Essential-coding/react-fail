@@ -18,6 +18,14 @@
 
         }
 
+        .about-content{
+            display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 25%;
+        
+        }
+
 
         @media(min-width:992px) {
             column-gap: 15%;

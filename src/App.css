@@ -439,6 +439,12 @@ html, body {
     grid-area: aside;
   }
 }
+.about-company .container .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 25%;
+}
 @media (min-width: 992px) {
   .about-company .container {
     -moz-column-gap: 15%;
