@@ -42,7 +42,7 @@ const Header = () => {
                         <NavLink to = "/News">News</NavLink>
                         <NavLink to = "/Contact">Contact</NavLink>
                     </nav>
-                    <YellowButton text="Login" url="/"></YellowButton>
+                    <YellowButton type="btn-yellow" text="Login" url="/"></YellowButton>
                 </div>
 
 
